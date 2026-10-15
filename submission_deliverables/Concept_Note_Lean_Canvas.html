@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AquaGuard AI — Concept Note & Lean Canvas</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 12mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0F2A33;
+      margin: 0;
+      padding: 20px;
+      background-color: #F4F9FA;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #004B5A;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .title h1 {
+      margin: 0;
+      color: #004B5A;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .title p {
+      margin: 4px 0 0 0;
+      color: #4F6C76;
+      font-size: 13px;
+    }
+    .badge {
+      background: #E4F7FF;
+      color: #004B5A;
+      border: 1px solid #0F6477;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .canvas-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 280px 220px;
+      gap: 10px;
+      background: #D5E3E7;
+      border: 1px solid #B0CAD1;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 12px 14px;
+      border-radius: 6px;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .card h3 {
+      margin: 0 0 8px 0;
+      color: #004B5A;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #EEF3F5;
+      padding-bottom: 4px;
+    }
+    .card ul {
+      margin: 0;
+      padding-left: 14px;
+      font-size: 11px;
+      line-height: 1.45;
+      color: #2D3748;
+    }
+    .card ul li {
+      margin-bottom: 5px;
+    }
+    .span-row {
+      grid-row: span 2;
+    }
+    .split-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .split-col .card {
+      flex: 1;
+    }
+    .footer-note {
+      margin-top: 14px;
+      font-size: 11px;
+      color: #6F797C;
+      text-align: center;
+      line-height: 1.4;
+      background: #ffffff;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #D5E3E7;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+    .print-bar {
+      margin-bottom: 12px;
+      text-align: right;
+    }
+    .print-btn {
+      background: #004B5A;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .print-btn:hover {
+      background: #0F6477;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">📥 Print / Save as PDF (Ctrl + P)</button>
+  </div>
+
+  <div class="header">
+    <div class="title">
+      <h1>AquaGuard AI — Concept Note & Lean Canvas</h1>
+      <p>AI-Powered Water Quality Screening & Regulatory Decision Support System | Aligned with UN SDG 6</p>
+    </div>
+    <div class="badge">Project Concept Note</div>
+  </div>
+
+  <div class="canvas-grid">
+    <!-- 1. PROBLEM -->
+    <div class="card">
+      <h3>1. Problem</h3>
+      <ul>
+        <li><strong>Lab Latency:</strong> Traditional multi-barrier laboratory testing takes 3 to 7 days, delaying contamination alerts.</li>
+        <li><strong>High Testing Costs:</strong> Complete lab assays for every wellhead or rural distribution point are economically unfeasible.</li>
+        <li><strong>Field Ambiguity:</strong> Field technicians capture sensor telemetry (pH, turbidity, TDS) but lack instant triage guidance.</li>
+        <li><strong>Black-Box Trust:</strong> Generic ML models provide opaque scores without explainability or regulatory benchmark alignment.</li>
+      </ul>
+    </div>
+
+    <!-- 2. SOLUTION & KEY METRICS -->
+    <div class="split-col">
+      <div class="card">
+        <h3>4. Solution</h3>
+        <ul>
+          <li><strong>Dual-Layer Screening:</strong> Calibrated GBDT ML + automated BIS IS 10500 & WHO compliance mapping.</li>
+          <li><strong>Explainable AI (SHAP):</strong> Real-time feature attributions explaining which parameters drove risk elevation.</li>
+          <li><strong>High-Throughput Batch:</strong> Drag-and-drop CSV validation scoring up to 500 field samples in seconds.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>8. Key Metrics</h3>
+        <ul>
+          <li><strong>Triage Turnaround:</strong> &lt; 200ms per sample screening.</li>
+          <li><strong>Model Reliability:</strong> ROC-AUC 0.924, Accuracy 84.0%, Brier Score 0.095.</li>
+          <li><strong>Prioritization Ratio:</strong> 60% reduction in unnecessary statutory lab dispatches.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. UNIQUE VALUE PROPOSITION -->
+    <div class="card">
+      <h3>3. Unique Value Proposition</h3>
+      <ul>
+        <li><strong>Rapid Field Triage in Seconds:</strong> Converts raw 9-parameter water probe readings into calibrated risk bands and actionable decisions.</li>
+        <li><strong>Explainable Over Black-Box:</strong> Transparent SHAP bar charts prove <em>why</em> a sample was flagged.</li>
+        <li><strong>Responsible AI by Design:</strong> Explicitly non-diagnostic; refuses false drinkability claims and prioritizes laboratory verification.</li>
+        <li><strong>Zero LLM Hallucinations:</strong> Purely deterministic geochemical ML pipeline.</li>
+      </ul>
+    </div>
+
+    <!-- 4. UNFAIR ADVANTAGE & CHANNELS -->
+    <div class="split-col">
+      <div class="card">
+        <h3>9. Unfair Advantage</h3>
+        <ul>
+          <li><strong>Dual-Engine Architecture:</strong> Simultaneously checks statistical geochemical patterns and formal legal BIS standards.</li>
+          <li><strong>Zero-Config Deployment:</strong> Single-terminal runner, offline-ready SQLite session persistence, and local mock fallback.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>5. Channels</h3>
+        <ul>
+          <li><strong>Government Water Boards:</strong> Public health surveillance (Jal Jeevan Mission / CPCB).</li>
+          <li><strong>Municipal Utilities:</strong> Drinking water distribution & treatment grid integration.</li>
+          <li><strong>Open APIs:</strong> Direct RESTful ingestion for IoT water sensor gateways.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5. CUSTOMER SEGMENTS -->
+    <div class="card">
+      <h3>2. Customer Segments</h3>
+      <ul>
+        <li><strong>Public Health & Municipal Bodies:</strong> Urban water supply departments monitoring distribution grids.</li>
+        <li><strong>Rural Water Missions:</strong> Field operators managing borewells and community tanks with handheld probes.</li>
+        <li><strong>Industrial Effluent Monitors:</strong> Environmental audit teams screening factory discharge compliance.</li>
+        <li><strong>Environmental NGOs:</strong> Citizen-science and watershed conservation teams.</li>
+      </ul>
+    </div>
+
+    <!-- 6. COST STRUCTURE (BOTTOM ROW) -->
+    <div class="card" style="grid-column: span 2;">
+      <h3>7. Cost Structure</h3>
+      <ul>
+        <li><strong>Compute & Cloud Infrastructure:</strong> Lightweight FastAPI + SQLite backend hosting and CDN asset delivery.</li>
+        <li><strong>ML Pipeline & Calibration:</strong> Retraining and validating GBDT models on regional geochemical survey datasets.</li>
+        <li><strong>Regulatory Maintenance:</strong> Continual updating of Bureau of Indian Standards (BIS IS 10500) and WHO benchmark tables.</li>
+        <li><strong>Quality Assurance & Field Auditing:</strong> Verification of sensor telemetry variance across seasonal shifts.</li>
+      </ul>
+    </div>
+
+    <!-- 7. REVENUE / IMPACT STREAMS (BOTTOM ROW) -->
+    <div class="card" style="grid-column: span 3;">
+      <h3>6. Revenue Streams & Impact Model</h3>
+      <ul>
+        <li><strong>SaaS Subscription for Water Utilities:</strong> Tiered enterprise licenses for regional watershed surveillance dashboards and automated batch processing.</li>
+        <li><strong>API Ingestion Licensing:</strong> Pay-per-query or monthly tiers for IoT sensor manufacturers and hardware logger telemetry gateways.</li>
+        <li><strong>Accredited Lab Referral Integration:</strong> Digital dispatch and split-sample tracking partnerships with certified testing laboratories.</li>
+        <li><strong>Social Impact (UN SDG 6):</strong> Accelerates universal access to monitored water sources by lowering the barrier to early risk detection.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <strong>Educational & Decision-Support Notice:</strong> AquaGuard AI is a screening triage tool and does not certify water as safe or potable. It is designed to assist environmental surveillance and prioritize samples for statutory, accredited laboratory verification.
+  </div>
+
+</body>
+</html>

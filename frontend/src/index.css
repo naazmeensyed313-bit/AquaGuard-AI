@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --color-surface: #f2fbff;
+  --color-surface-dim: #c3deea;
+  --color-surface-bright: #f2fbff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e4f7ff;
+  --color-surface-container: #d7f2fe;
+  --color-surface-container-high: #d1edf9;
+  --color-surface-container-highest: #cbe7f3;
+  --color-on-surface: #021f27;
+  --color-on-surface-variant: #3f484b;
+  --color-inverse-surface: #1a343d;
+  --color-inverse-on-surface: #ddf5ff;
+  --color-outline: #6f797c;
+  --color-outline-variant: #bfc8cc;
+  --color-surface-tint: #15677a;
+
+  --color-primary: #004b5a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0f6477;
+  --color-on-primary-container: #99def4;
+  --color-inverse-primary: #8bd1e6;
+
+  --color-secondary: #006972;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #72eefd;
+  --color-on-secondary-container: #006b75;
+
+  --color-tertiary: #004388;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #265ba4;
+  --color-on-tertiary-container: #c0d5ff;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-brand-marine: #0a2f3a;
+  --color-brand-teal: #0f6477;
+  --color-brand-aqua: #22b3c1;
+  --color-brand-border: #d5e3e7;
+
+  --color-risk-lower: #17714a;
+  --color-risk-lower-bg: #e2f4ea;
+  --color-risk-lower-border: #9ad3b4;
+
+  --color-risk-inconclusive: #8a5a0b;
+  --color-risk-inconclusive-bg: #fdf1d6;
+  --color-risk-inconclusive-border: #ebc878;
+
+  --color-risk-elevated: #a63322;
+  --color-risk-elevated-bg: #fbe5e0;
+  --color-risk-elevated-border: #eda699;
+
+  --color-risk-neutral: #4f6c76;
+  --color-risk-neutral-bg: #eef3f5;
+  --color-risk-neutral-border: #d5e3e7;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f2fbff;
+  color: #021f27;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono, .metric-font {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+

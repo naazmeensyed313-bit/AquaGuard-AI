@@ -1,0 +1,15 @@
+{
+  "name": "aquaguard-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AquaGuard AI — AI-Powered Water Quality Screening & Decision Support System",
+  "scripts": {
+    "start": "python run.py",
+    "dev": "python run.py",
+    "backend": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "frontend": "npm run --prefix frontend dev",
+    "test:backend": "python -m unittest backend/tests/test_api.py",
+    "build:frontend": "npm run --prefix frontend build"
+  }
+}
+

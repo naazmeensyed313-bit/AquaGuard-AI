@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AquaGuard AI — Final Project Visual Walkthrough & Screenshots</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 15mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0F2A33;
+      margin: 0;
+      padding: 24px;
+      background: #F4F9FA;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .header {
+      background: #004B5A;
+      color: white;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      margin: 0 0 6px 0;
+      font-size: 26px;
+    }
+    .header p {
+      margin: 0;
+      color: #A8E3E8;
+      font-size: 14px;
+    }
+    .screen-block {
+      background: white;
+      border: 1px solid #D5E3E7;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 24px;
+      page-break-inside: avoid;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+    .screen-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #E2F4EA;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+    .screen-title h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #004B5A;
+    }
+    .screen-badge {
+      background: #E4F7FF;
+      color: #0F6477;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      border: 1px solid #B0CAD1;
+    }
+    .screen-desc {
+      font-size: 13px;
+      color: #4F6C76;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .ui-mockup {
+      border: 1px solid #D5E3E7;
+      border-radius: 8px;
+      background: #F8FBFC;
+      padding: 16px;
+      font-family: inherit;
+    }
+    .browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #ED7161; }
+    .dot-yellow { background: #ECC94B; }
+    .dot-green { background: #48BB78; }
+    .url-bar {
+      background: #ffffff;
+      border: 1px solid #CBD5E0;
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 11px;
+      color: #4A5568;
+      font-family: monospace;
+      flex: 1;
+      margin-left: 10px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .feature-box {
+      background: #ffffff;
+      border: 1px solid #E2E8F0;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .feature-box h4 {
+      margin: 0 0 4px 0;
+      font-size: 12px;
+      color: #004B5A;
+    }
+    .feature-box p {
+      margin: 0;
+      font-size: 11px;
+      color: #718096;
+      line-height: 1.4;
+    }
+    .print-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #004B5A;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .print-btn:hover {
+      background: #0F6477;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+      .print-btn {
+        display: none;
+      }
+      .screen-block {
+        box-shadow: none;
+        border: 1px solid #CBD5E0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">📥 Print / Save as PDF</button>
+
+  <div class="header">
+    <h1>AquaGuard AI — Complete Project Visual Portfolio</h1>
+    <p>Comprehensive UI/UX Screens, Machine Learning Diagnostics, Regulatory Audits & High-Throughput Batch Workflows</p>
+  </div>
+
+  <!-- SCREEN 1 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>1. Landing Page & Public Overview</h2>
+      <span class="screen-badge">Route: /</span>
+    </div>
+    <p class="screen-desc">
+      Welcomes environmental officers and stakeholders. Outlines UN SDG 6 alignment, core architecture, and responsible AI non-certifying principles with an interactive real-time preview card.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Hero Headline</h4>
+          <p>Clear statement of purpose: AI-Powered Water Quality Screening & Decision Support System.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Interactive Preview Card</h4>
+          <p>Real-time parameter sliders allowing users to inspect immediate ML band and score reactions.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Safety Disclaimers</h4>
+          <p>Persistent statutory disclaimer emphasizing laboratory referral and educational triage scope.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 2 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>2. Single Sample Telemetry Ingestion Form</h2>
+      <span class="screen-badge">Route: /analyze</span>
+    </div>
+    <p class="screen-desc">
+      Structured intake for the 9 physicochemical parameters with live physical boundary validation, benchmark sample preset quick-fill buttons, and dynamic input completeness calculation.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/analyze</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>9 Calibrated Parameters</h4>
+          <p>pH (0-14), Turbidity, Solids/TDS, Chloramines, Sulfate, Conductivity, TOC, THM, and Hardness.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Sample Preset Shortcuts</h4>
+          <p>One-click sample loaders (Highland Spring, Community Filter Tank, Industrial Canal Effluent).</p>
+        </div>
+        <div class="feature-box">
+          <h4>Completeness Ring</h4>
+          <p>Dynamic SVG ring calculating provided % and assigning confidence tiers (High, Moderate, Low).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 3 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>3. Screening Report: Calibrated Risk Gauge & Synthesis</h2>
+      <span class="screen-badge">Route: /result/:id</span>
+    </div>
+    <p class="screen-desc">
+      Visualizes empirical ML risk stratification via a calibrated radial gauge dial, classifier bias indicators, and structured educational synthesis text.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/result/sample-ward-12</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Radial Score Gauge</h4>
+          <p>Visual 0.00 to 1.00 dial showing calibrated empirical probability and normative baseline boundaries.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Standardized Risk Bands</h4>
+          <p>Classified into: Lower Concern, Inconclusive — lab testing recommended, or Elevated Concern.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Decision Synthesis</h4>
+          <p>Automated guidance text explaining balancing feature weights and laboratory re-testing necessity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 4 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>4. Explainable AI: SHAP Parameter Feature Contributions</h2>
+      <span class="screen-badge">Route: /result/:id#shap</span>
+    </div>
+    <p class="screen-desc">
+      Eliminates black-box opacity. Displays color-coded parameter contributions quantifying how each chemical pushed the score toward Lower Concern (green) or Elevated Concern (red).
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/result/sample-ward-12 (SHAP Section)</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Baseline Value (E[f(x)])</h4>
+          <p>Displays starting empirical prior expectation (0.45) across historical water survey records.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Directional Push Bars</h4>
+          <p>Red bars for deviations (e.g. Turbidity +0.14) and green bars for compliant stabilizing parameters.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Accessible Tabular View</h4>
+          <p>Toggle switch for keyboard users and screen readers providing exact numeric contribution values.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 5 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>5. Regulatory Standards Adherence Check</h2>
+      <span class="screen-badge">Route: /result/:id#standards</span>
+    </div>
+    <p class="screen-desc">
+      Independent dual-layer audit comparing all 9 physicochemical parameters against official Bureau of Indian Standards (BIS IS 10500) and World Health Organization (WHO) Guidelines.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/result/sample-ward-12 (Standards Section)</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Standard Status Badges</h4>
+          <p>Explicit badges: "Within range", "Above range", "Below range", "No formal reference", "Not provided".</p>
+        </div>
+        <div class="feature-box">
+          <h4>Statutory Benchmarks</h4>
+          <p>Direct citation of legal permissible limits (e.g., pH 6.5–8.5, Turbidity &lt; 5 NTU, TDS &lt; 500 mg/L).</p>
+        </div>
+        <div class="feature-box">
+          <h4>Audit Vocabulary Guardrail</h4>
+          <p>Strict separation ensuring ML probability bands never mix with legal standards adherence badges.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 6 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>6. Batch Telemetry CSV Ingestion (Drag-and-Drop)</h2>
+      <span class="screen-badge">Route: /batch</span>
+    </div>
+    <p class="screen-desc">
+      High-throughput field logging interface. Features a dashed drag-and-drop dropzone, CSV template download, and strict client-side validation for file format, size (5 MB), and row count (500 rows).
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/batch</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Interactive Dropzone</h4>
+          <p>Smooth drag-and-drop file ingestion zone with limits indicator: "CSV · up to 500 rows · 5 MB".</p>
+        </div>
+        <div class="feature-box">
+          <h4>Client-Side Validation</h4>
+          <p>Instant verification for empty files, oversized payloads, and missing essential parameter columns.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Template Export</h4>
+          <p>One-click downloadable CSV template with pre-formatted column headers for rapid field entry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 7 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>7. Batch Validation Queue & Triage Execution</h2>
+      <span class="screen-badge">Route: /batch (Step 2 & 3)</span>
+    </div>
+    <p class="screen-desc">
+      Displays pre-scoring validation queues flagging invalid rows, followed by instant multi-sample scoring and triage report export.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/batch (Results Queue)</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Validation Triage</h4>
+          <p>Clear counter cards for Valid Samples Ready vs. Flagged Invalid Rows requiring field re-check.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Simultaneous Model Scoring</h4>
+          <p>Scores hundreds of samples across the GBDT pipeline in under 2 seconds with individual risk bands.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Batch CSV Export</h4>
+          <p>Exports complete multi-sample screening reports with calibrated scores and completeness metrics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 8 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>8. Watershed Screening Analytics Dashboard</h2>
+      <span class="screen-badge">Route: /dashboard</span>
+    </div>
+    <p class="screen-desc">
+      Macro-level watershed intelligence showing aggregate sample metrics, risk band distributions, empirical score histograms, and regional parameter averages.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/dashboard</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Score Distribution Histogram</h4>
+          <p>Visual 5-bucket distribution charting regional water risk trends from 0.00 to 1.00.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Chemical Baseline Averages</h4>
+          <p>Average concentration levels across all 9 parameters monitored within the watershed catchment.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Recent Ingestion Feed</h4>
+          <p>Audit trail of recent field station inputs with direct links to individual screening reports.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 9 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>9. Audit Records & Side-by-Side Comparison</h2>
+      <span class="screen-badge">Route: /history & /compare</span>
+    </div>
+    <p class="screen-desc">
+      Full historical tracking with searchable, filterable logs and side-by-side comparative inspection between two water sources.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/compare</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>Searchable Audit Trail</h4>
+          <p>Filter by risk band, sort by date or classifier score, and manage session records in SQLite.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Side-by-Side Comparison</h4>
+          <p>Direct delta inspection comparing parameter differentials between inlet and discharge points.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Data Export Options</h4>
+          <p>Standardized CSV and print report formatting for field audit presentations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 10 -->
+  <div class="screen-block">
+    <div class="screen-title">
+      <h2>10. Open Model Card, Calibration Curves & Architecture</h2>
+      <span class="screen-badge">Route: /about</span>
+    </div>
+    <p class="screen-desc">
+      Complete transparency and model governance. Documents the trained HistGradientBoosting model, ROC-AUC curve (0.924), Platt calibration curve, confusion matrix, and benchmark comparisons.
+    </p>
+    <div class="ui-mockup">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="url-bar">http://localhost:3000/about</span>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>ROC & PR Curves</h4>
+          <p>Interactive Recharts curves showing 0.924 ROC-AUC and 84.0% balanced classification accuracy.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Calibration Curve</h4>
+          <p>Platt sigmoid scaling curve confirming observed event fraction aligns with predicted probabilities.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Intended vs. Prohibited Uses</h4>
+          <p>Strict governance boundaries outlining prohibited applications (e.g. bypassing statutory lab tests).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

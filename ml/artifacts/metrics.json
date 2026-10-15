@@ -1,0 +1,280 @@
+{
+  "version": "v2.4 \u00b7 Calibrated GBDT",
+  "architecture": "Calibrated HistGradientBoosting (5-fold Sigmoid Platt Scaling)",
+  "dataset": "Environmental Physicochemical Telemetry Benchmark (3,276 records)",
+  "calibrated": true,
+  "base_value": 0.46,
+  "feature_medians": {
+    "ph": 7.12,
+    "hardness": 195.35000000000002,
+    "solids": 15212.45,
+    "chloramines": 7.09,
+    "sulfate": 335.4,
+    "conductivity": 427.55,
+    "organic_carbon": 14.28,
+    "trihalomethanes": 66.33,
+    "turbidity": 3.97
+  },
+  "metrics": {
+    "accuracy": 0.84,
+    "precision": 0.844,
+    "recall": 0.796,
+    "f1Score": 0.819,
+    "rocAuc": 0.924,
+    "brierScore": 0.112
+  },
+  "modelsBenchmark": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.712,
+      "precision": 0.685,
+      "recall": 0.682,
+      "f1": 0.683,
+      "rocAuc": 0.806
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.832,
+      "precision": 0.836,
+      "recall": 0.786,
+      "f1": 0.81,
+      "rocAuc": 0.915
+    },
+    {
+      "model": "HistGradientBoosting",
+      "accuracy": 0.834,
+      "precision": 0.839,
+      "recall": 0.786,
+      "f1": 0.812,
+      "rocAuc": 0.917
+    }
+  ],
+  "confusionMatrix": {
+    "tp": 238,
+    "fp": 44,
+    "fn": 61,
+    "tn": 313
+  },
+  "rocCurve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.008,
+      "tpr": 0.211
+    },
+    {
+      "fpr": 0.02,
+      "tpr": 0.462
+    },
+    {
+      "fpr": 0.031,
+      "tpr": 0.528
+    },
+    {
+      "fpr": 0.039,
+      "tpr": 0.629
+    },
+    {
+      "fpr": 0.059,
+      "tpr": 0.659
+    },
+    {
+      "fpr": 0.067,
+      "tpr": 0.709
+    },
+    {
+      "fpr": 0.084,
+      "tpr": 0.732
+    },
+    {
+      "fpr": 0.101,
+      "tpr": 0.763
+    },
+    {
+      "fpr": 0.112,
+      "tpr": 0.779
+    },
+    {
+      "fpr": 0.126,
+      "tpr": 0.803
+    },
+    {
+      "fpr": 0.148,
+      "tpr": 0.819
+    },
+    {
+      "fpr": 0.174,
+      "tpr": 0.849
+    },
+    {
+      "fpr": 0.21,
+      "tpr": 0.873
+    },
+    {
+      "fpr": 0.224,
+      "tpr": 0.9
+    },
+    {
+      "fpr": 0.269,
+      "tpr": 0.91
+    },
+    {
+      "fpr": 0.277,
+      "tpr": 0.933
+    },
+    {
+      "fpr": 0.308,
+      "tpr": 0.95
+    },
+    {
+      "fpr": 0.342,
+      "tpr": 0.963
+    },
+    {
+      "fpr": 0.389,
+      "tpr": 0.973
+    },
+    {
+      "fpr": 0.555,
+      "tpr": 0.987
+    },
+    {
+      "fpr": 0.742,
+      "tpr": 0.997
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "prCurve": [
+    {
+      "recall": 1.0,
+      "precision": 0.456
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.479
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.505
+    },
+    {
+      "recall": 0.997,
+      "precision": 0.532
+    },
+    {
+      "recall": 0.993,
+      "precision": 0.562
+    },
+    {
+      "recall": 0.987,
+      "precision": 0.595
+    },
+    {
+      "recall": 0.98,
+      "precision": 0.631
+    },
+    {
+      "recall": 0.977,
+      "precision": 0.676
+    },
+    {
+      "recall": 0.957,
+      "precision": 0.715
+    },
+    {
+      "recall": 0.91,
+      "precision": 0.739
+    },
+    {
+      "recall": 0.873,
+      "precision": 0.777
+    },
+    {
+      "recall": 0.833,
+      "precision": 0.819
+    },
+    {
+      "recall": 0.779,
+      "precision": 0.857
+    },
+    {
+      "recall": 0.716,
+      "precision": 0.892
+    },
+    {
+      "recall": 0.642,
+      "precision": 0.923
+    },
+    {
+      "recall": 0.552,
+      "precision": 0.938
+    },
+    {
+      "recall": 0.458,
+      "precision": 0.951
+    },
+    {
+      "recall": 0.365,
+      "precision": 0.973
+    },
+    {
+      "recall": 0.258,
+      "precision": 0.963
+    },
+    {
+      "recall": 0.161,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.054,
+      "precision": 1.0
+    }
+  ],
+  "calibrationCurve": [
+    {
+      "meanPredicted": 0.04,
+      "observedFraction": 0.025
+    },
+    {
+      "meanPredicted": 0.143,
+      "observedFraction": 0.052
+    },
+    {
+      "meanPredicted": 0.249,
+      "observedFraction": 0.186
+    },
+    {
+      "meanPredicted": 0.345,
+      "observedFraction": 0.397
+    },
+    {
+      "meanPredicted": 0.447,
+      "observedFraction": 0.426
+    },
+    {
+      "meanPredicted": 0.555,
+      "observedFraction": 0.559
+    },
+    {
+      "meanPredicted": 0.647,
+      "observedFraction": 0.698
+    },
+    {
+      "meanPredicted": 0.749,
+      "observedFraction": 0.849
+    },
+    {
+      "meanPredicted": 0.854,
+      "observedFraction": 0.917
+    },
+    {
+      "meanPredicted": 0.945,
+      "observedFraction": 0.967
+    }
+  ]
+}
