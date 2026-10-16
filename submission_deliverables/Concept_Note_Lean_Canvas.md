@@ -39,3 +39,4 @@ AquaGuard AI enforces strict public health safety boundaries:
 - **No Certifications:** The platform systematically refuses to issue "safe to drink" certifications.
 - **Audited Vocabulary:** Result badges strictly use *Lower Concern*, *Inconclusive*, and *Elevated Concern*; standard compliance strictly uses *Within range*, *Above range*, and *Below range*.
 - **Explicit Limitations:** Transparently disclaims that microbial pathogens (E. coli, viruses) and heavy metals (lead, arsenic) require certified laboratory spectrometry.
+
