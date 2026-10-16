@@ -241,3 +241,4 @@ if __name__ == "__main__":
     target = os.path.join(base_dir, "submission_deliverables", "Concept_Note_Lean_Canvas.pdf")
     os.makedirs(os.path.dirname(target), exist_ok=True)
     generate_concept_note_pdf(target)
+

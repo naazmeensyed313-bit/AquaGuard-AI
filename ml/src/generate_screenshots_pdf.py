@@ -261,3 +261,4 @@ if __name__ == "__main__":
     target = os.path.join(base_dir, "submission_deliverables", "Project_Screenshots.pdf")
     os.makedirs(os.path.dirname(target), exist_ok=True)
     generate_screenshots_pdf(target)
+
